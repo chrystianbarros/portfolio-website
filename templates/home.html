@@ -9,49 +9,51 @@
 </head>
 
 <body>
-    <h1>Chrystian de Paula Barros</h1>
-    <div class="menubar">
-        <a class="menubar" href="#Introduction">Introduction</a>
-        <a href="#Certifications">Certifications</a>
-        <a href="#TechnicalSkills">Technical Skills</a>
-        <a href="#ProfessionalGoals">Professional Goals</a>
-        <a href="#Projects">Projects</a>
-    </div>
-    
-    <div class="intro">
-        <h2>Introduction</h2>
-        <div class="intro_whoami">
-            <h3>Who am I?</h3>
-            <div class="whoami_content">
-                <div class="my_photo">
-                    <img src="../static/images/chrystian-4.jpg" width="300" alt="Me">
+    <div class="content_wrap">
+        <h1>Chrystian de Paula Barros</h1>
+        <div class="menubar">
+            <a class="menubar" href="#Introduction">Introduction</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#TechnicalSkills">Technical Skills</a>
+            <a href="#ProfessionalGoals">Professional Goals</a>
+            <a href="#Projects">Projects</a>
+        </div>
+        
+        <div class="intro">
+            <h2>Introduction</h2>
+            <div class="intro_whoami">
+                <h3>Who am I?</h3>
+                <div class="whoami_content">
+                    <div class="my_photo">
+                        <img src="../static/images/chrystian-4.jpg" width="300" alt="Me">
+                    </div>
+                    <div class="whoami_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non euismod quam. Vestibulum vel sapien fringilla, sagittis mi auctor, egestas metus. Donec cursus sapien vel nunc efficitur vulputate. Duis vitae est volutpat, egestas lacus at, suscipit turpis. Curabitur sagittis fermentum nunc, quis tempor leo aliquam sit amet. Aliquam sed lobortis nibh. Mauris aliquet felis diam. Nam dignissim purus in eros posuere tincidunt et et sem. Suspendisse arcu felis, egestas id porttitor vel, efficitur eget sem. Donec in ornare mauris.</p>
+                        <p>Etiam non enim eget massa blandit blandit ut non dolor. Phasellus mollis massa eros, nec mattis elit ullamcorper id. Quisque euismod risus in nisi porttitor, vel euismod lectus congue. Mauris ac massa efficitur, tincidunt dolor quis, scelerisque turpis. Maecenas interdum venenatis condimentum. Aliquam ac lectus tincidunt, faucibus magna tincidunt, cursus sapien. Etiam id est sodales, tempus tortor non, porttitor metus. Aliquam augue nunc, ullamcorper non leo vitae, tempor hendrerit nulla. Nulla ac ante at massa hendrerit lacinia sit amet in est. Donec elementum elit lacus, eget mollis augue volutpat vel. Suspendisse mollis commodo pellentesque. Proin a blandit velit, ac porttitor leo. Pellentesque hendrerit malesuada bibendum. Pellentesque eget sapien euismod risus viverra faucibus. Ut porta pellentesque porta. Fusce ex ante, sagittis vel nisl in, iaculis tristique mauris.</p>
+                    </div>
                 </div>
-                <div class="whoami_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non euismod quam. Vestibulum vel sapien fringilla, sagittis mi auctor, egestas metus. Donec cursus sapien vel nunc efficitur vulputate. Duis vitae est volutpat, egestas lacus at, suscipit turpis. Curabitur sagittis fermentum nunc, quis tempor leo aliquam sit amet. Aliquam sed lobortis nibh. Mauris aliquet felis diam. Nam dignissim purus in eros posuere tincidunt et et sem. Suspendisse arcu felis, egestas id porttitor vel, efficitur eget sem. Donec in ornare mauris.</p>
-                    <p>Etiam non enim eget massa blandit blandit ut non dolor. Phasellus mollis massa eros, nec mattis elit ullamcorper id. Quisque euismod risus in nisi porttitor, vel euismod lectus congue. Mauris ac massa efficitur, tincidunt dolor quis, scelerisque turpis. Maecenas interdum venenatis condimentum. Aliquam ac lectus tincidunt, faucibus magna tincidunt, cursus sapien. Etiam id est sodales, tempus tortor non, porttitor metus. Aliquam augue nunc, ullamcorper non leo vitae, tempor hendrerit nulla. Nulla ac ante at massa hendrerit lacinia sit amet in est. Donec elementum elit lacus, eget mollis augue volutpat vel. Suspendisse mollis commodo pellentesque. Proin a blandit velit, ac porttitor leo. Pellentesque hendrerit malesuada bibendum. Pellentesque eget sapien euismod risus viverra faucibus. Ut porta pellentesque porta. Fusce ex ante, sagittis vel nisl in, iaculis tristique mauris.</p>
+            </div>
+            
+            <!--Div for My Skills Session-->
+            <div class="intro_myskills">
+                <h3>What are my main skills?</h3>
+                <div class="mainskills_list">
+                    {%for i in skills%}
+                        {%include 'my_skills.html'%}
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        
-        <!--Div for My Skills Session-->
-        <div class="intro_myskills">
-            <h3>What are my main skills?</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Donec placerat ligula non consequat elementum.</li>
-                <li>Aliquam ac risus non mi imperdiet aliquet sed sed lorem.</li>
-                <li>Mauris et turpis at lacus porta aliquet.</li>
-                <li>Maecenas mollis lacus id purus lobortis elementum at in justo.</li>
-            </ul>
-        </div>
     </div>
 
-</body>
+    <footer>
+        <div>
+            <h5>How to contact me?</h5>
+            <button type="button" class="btn btn-primary btn-sm">Instragram</button>
+            <button type="button" class="btn btn-primary btn-sm">LinkedIn</button>
+        </div>
+    </footer>
 
-<footer>
-    <h5>How to contact me?</h5>
-    <button>Instagram</button>
-    <button>LinkedIn</button>
-</footer>
+</body>
 
 </html>

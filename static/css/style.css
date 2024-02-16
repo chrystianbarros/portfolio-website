@@ -1,5 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.content_wrap{
+    padding-bottom: 2.5rem;
 }
 
 .menubar {
@@ -29,7 +34,11 @@ img {
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 100px;
     text-align: center;
+    width: 100%;
+    height: 2.5rem;            /* altura do rodapé */
+}
+
+.skills {
+    margin-bottom: 3%;
 }
