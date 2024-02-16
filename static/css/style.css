@@ -1,18 +1,83 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
+}
+
+.column {
+    float: left;
+}
+
+h1 {
+    padding: 20px;
+}
+
+h2.intro_title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.whoami_text {
+    padding-left: 20px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
 }
 
 .content_wrap{
-    padding-bottom: 2.5rem;
+    margin-bottom: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .menubar {
     text-align: center;
+    background-color: lightgray;
+    width: auto;
+    padding: 20px;
 }
+
+a {
+    padding: 20px;
+}
+
+a:link, a:visited {
+    background-color: #0d6efd;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
 
 .intro {
     padding: 30px;
+}
+
+.intro_myskills {
+    padding-top: 40px;
 }
 
 h1 {
@@ -28,17 +93,29 @@ h1 {
 }
 
 img {
-    padding-right: 20px;
+    border-radius: 25px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.footer_board {
+    background-color: lightgray;
+    align-content: center;
+    padding: 10px;
     text-align: center;
-    width: 100%;
-    height: 2.5rem;            /* altura do rodapé */
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: auto;
 }
 
 .skills {
-    margin-bottom: 3%;
+    margin-bottom: 10px;
 }
