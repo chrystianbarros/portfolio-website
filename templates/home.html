@@ -9,19 +9,14 @@
 </head>
 
 <body>
-    <h1>Chrystian de Paula Barros</h1>
     <div class="menubar">
-        <a class="menubar" href="#Introduction">Introduction</a>
-        <a href="#Certifications">Certifications</a>
-        <a href="#TechnicalSkills">Technical Skills</a>
-        <a href="#ProfessionalGoals">Professional Goals</a>
-        <a href="#Projects">Projects</a>
+        {%include 'nav.html'%}
     </div>
     
     <div class="content_wrap">
         
         <div class="intro">
-            <h2 class="intro_title">Introduction</h2>
+            <h2 class="intro_title"><b>Introduction</b></h2>
             <div class="intro_whoami">
                 <div class="whoami_content">
                     <div class="column">
@@ -29,7 +24,7 @@
                     </div>
                     <div class="column">
                         <div class="whoami_text">
-                            <h3>Who am I?</h3>
+                            <h3><b>Who am I?</b></h3>
                             <p>Professional with solid knowledge in IT infrastructure, with three years of experience in the IT market
                                 work. Has good diction, ease in relating and conducting interactions with different teams, demonstrates
                                 ability to adapt quickly and be proactive.</p>
@@ -42,7 +37,7 @@
             
             <!--Div for My Skills Session-->
             <div class="intro_myskills">
-                <h3>What are my main skills?</h3>
+                <h3><b>What are my main skills?</b></h3>
                 <div class="mainskills_list">
                     {%for i in skills%}
                         {%include 'my_skills.html'%}
@@ -53,11 +48,7 @@
     </div>
 
     <footer>
-        <div class="footer_board">
-            <h5>How to contact me?</h5>
-            <button type="button" class="btn btn-primary btn-sm">Instragram</button>
-            <button type="button" class="btn btn-primary btn-sm">LinkedIn</button>
-        </div>
+        {%include 'footer.html'%}
     </footer>
 
 </body>

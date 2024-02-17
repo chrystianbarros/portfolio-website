@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    padding: 20px;
+    padding: 10px;
 }
 
 h2.intro_title {
@@ -38,8 +38,14 @@ h2.intro_title {
 .menubar {
     text-align: center;
     background-color: lightgray;
+    padding: 5px;
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
     width: auto;
-    padding: 20px;
+    margin: auto;
+    height: auto;
 }
 
 a {
