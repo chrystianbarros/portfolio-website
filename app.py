@@ -43,4 +43,5 @@ def portfolio_website():
 def main_skills():
     return jsonify(SKILLS)
 
+#Comment the line below when using Gunicorn as WSGI
 app.run(host='0.0.0.0', port=5000, debug=True)
