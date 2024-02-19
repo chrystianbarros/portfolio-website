@@ -43,4 +43,4 @@ def portfolio_website():
 def main_skills():
     return jsonify(SKILLS)
 
-app.run(host='0.0.0.0', port=1443, debug=True)
+app.run(host='0.0.0.0', port=5000, debug=True)
