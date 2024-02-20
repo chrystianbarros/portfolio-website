@@ -37,7 +37,7 @@ SKILLS = [
 
 @app.route("/")
 def portfolio_website():
-    return render_template('home.html', skills=SKILLS)
+    return render_template('home.html')
 
 @app.route("/api/mainSkills")
 def main_skills():
