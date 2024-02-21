@@ -1,107 +1,29 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    background-color: lightgray;
-    width: 100%;
-    padding: 0;
-}
-
 .column {
     float: left;
+    width: 50%;
 }
 
-h1 {
-    padding: 10px;
+.row {
+    padding: 5%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
 }
 
-h2.intro_title {
-    text-align: center;
-    padding-bottom: 40px;
-}
+@media screen and (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+    
+    .column {
+      width: 100%;
+    }
 
-.whoami_text {
-    padding-left: 20px;
-}
-
-.left {
-    width: 25%;
-}
-
-.right {
-    width: 75%;
-}
-
-.content_wrap{
-    margin-bottom: 90px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.menubar {
-    text-align: center;
-    background-color: lightgray;
-    padding: 0;
-    position:relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: auto;
-    margin: auto;
-    height: auto;
-}
-
-li {
-    padding: 5px;
-}
-
-.intro {
-    padding: 30px;
-}
-
-.intro_myskills {
-    padding-top: 40px;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.whoami_content {
-    display: flex;
-    align-items:stretch;
-    justify-content: left;
-}
-
-img {
-    border-radius: 25px;
-}
-
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-}
-
-.footer_board {
-    background-color: lightgray;
-    align-content: center;
-    padding: 10px;
-    text-align: center;
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 75%;
-    margin: auto;
-    margin-bottom: 20px;
-    height: auto;
-}
-
-.skills {
-    margin-bottom: 10px;
+    .footer_board {
+        width: 100%;
+    }
 }

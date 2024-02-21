@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, redirect
 
 app = Flask(__name__)
 
@@ -37,7 +37,15 @@ SKILLS = [
 
 @app.route("/")
 def portfolio_website():
+    return redirect("/home", code=302)
+
+@app.route("/home")
+def home_page():
     return render_template('home.html')
+
+@app.route("/apresentacao")
+def apresentacao_page():
+    return render_template('apresentacao.html')
 
 @app.route("/api/mainSkills")
 def main_skills():

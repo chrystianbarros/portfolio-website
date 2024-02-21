@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: lightgray;
+    width: 100%;
+    padding: 0;
+}
+
+.column {
+    float: left;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2.intro_title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.whoami_text {
+    padding-left: 20px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+.content_wrap{
+    margin-bottom: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menubar {
+    text-align: center;
+    background-color: lightgray;
+    padding: 0;
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: auto;
+    height: auto;
+}
+
+li {
+    padding: 5px;
+}
+
+.intro {
+    padding: 30px;
+}
+
+.intro_myskills {
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.whoami_content {
+    display: flex;
+    align-items:stretch;
+    justify-content: left;
+}
+
+img {
+    border-radius: 25px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.footer_board {
+    background-color: lightgray;
+    align-content: center;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.skills {
+    margin-bottom: 10px;
+}
