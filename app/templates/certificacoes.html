@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Início</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/1f64795f0d.js" crossorigin="anonymous" class="fontawesome"></script>
+        <link href="/static/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navigationBar">
+            {%include 'nav.html'%}
+        </div>
+
+        <main>
+            <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Minhas badges e certificações</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+                    <!--Cisco IT Essentials-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/cisco-logo.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Cisco IT Essentials</h3>
+                        <p>Conhecimento de operações e troubleshooting básico de suporte e redes de computadores</p>
+                        <a class="icon-link" target="_blank" href="https://www.credly.com/badges/71c7e247-a946-4b4e-b75c-33f4b3d12f3b/linked_in_profile" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                    <!--Fortinet Certified Fundamentals Cybersecurity-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/fortinet.logo.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Fortinet Certified Fundamentals Cybersecurity</h3>
+                        <p>Conhecimento de conceitos e boas práticas de segurança da informação.</p>
+                        <a class="icon-link" target="_blank" href="https://www.credly.com/badges/18985318-6b7e-48e0-951a-270ae955abec/linked_in_profile" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                    <!--Microsoft Azure Administrator-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/microsoft-azure-logo.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Microsoft Azure Administrator</h3>
+                        <p>Administração e entrega de soluções por meio de serviços da nuvem Microsoft Azure</p>
+                        <a class="icon-link" target="_blank" href="https://learn.microsoft.com/en-us/users/chrystianbarros-3644/achievements/4s8q6ndk" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                    <!--Microsoft Certified: Azure Fundamentals-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/microsoft-azure-logo.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">Microsoft Certified: Azure Fundamentals</h3>
+                        <p>Conhecimento de fundamentos dos serviços oferecidos pela Microsoft Azure</p>
+                        <a class="icon-link" target="_blank" href="https://www.credly.com/badges/60fc4c9e-0119-40de-869b-1e4e0926db51/linked_in_profile" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                    <!--OCI Foundations 2023 Associate-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/oracle-cloud-icon.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">OCI Foundations 2023 Associate</h3>
+                        <p>Conhecimento de fundamentos dos serviços oferecidos pela Oracle Cloud Infrastructure</p>
+                        <a class="icon-link" target="_blank" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B8A525E46782D6EEBD79DD932F045B4285837C43B3021D534C777604E4DE3B59" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                    <!--OCI 2023 Multicloud Architect Certified Associate-->
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-left fs-2 mb-3">
+                        <img src="../static/images/oracle-cloud-icon.png" width="50%" style="padding-bottom: 5%;">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis">OCI 2023 Multicloud Architect Certified Associate</h3>
+                        <p>Design e implementação de soluções multicloud para a Oracle Cloud Infrastructure (OCI).</p>
+                        <a class="icon-link" target="_blank" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=23B95E49265952F937A54476277A1260294D8D383306FF574770D6BF22BF6024" style="padding-bottom: 10%;">
+                        Saiba mais
+                        </a>
+                    </div>
+
+                </div>
+              </div>
+        </main>
+
+        <div class="footer">
+            {%include 'footer.html'%}
+        </div>
+    </body>
+</html>

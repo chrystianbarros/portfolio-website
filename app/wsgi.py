@@ -12,8 +12,16 @@ def home():
     return render_template('home.html')
 
 @app.route("/apresentacao")
-def apresentacao_page():
+def apresentacao():
     return render_template('apresentacao.html')
+
+@app.route("/certificacoes")
+def certificacoes():
+    return render_template('certificacoes.html')
+
+@app.route("/habilidades")
+def habilidades():
+    return render_template('habilidades.html')
 
 @app.route("/container")
 def container_id():
