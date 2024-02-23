@@ -43,14 +43,18 @@ clear: both;
 
 @media screen and (max-width: 600px) {
     img {
-        width: 100%;
-    }
-    
-    .column {
-      width: 100%;
+        width: 200%;
     }
 
-    .footer_board {
+    .icons-habilidades {
+        width: 40px;
+    }
+
+    .home-image, .my-photo, .nav-signature, .column, .footer_board {
         width: 100%;
+    }
+
+    .apresentacao-signature {
+        width: 70%;
     }
 }
