@@ -23,6 +23,10 @@ def certificacoes():
 def habilidades():
     return render_template('habilidades.html')
 
+@app.route("/projeto")
+def projeto():
+    return render_template('projeto.html')
+
 @app.route("/container")
 def container_id():
     return f"Container ID: {socket.gethostname()}"

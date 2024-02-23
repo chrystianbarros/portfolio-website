@@ -50,6 +50,37 @@ clear: both;
         width: 40px;
     }
 
+    .icons-projetos {
+        width: 50px;
+        padding-bottom: 10px;
+    }
+
+    .icons-projetos-flask {
+        width: 47px;
+        padding-bottom: 10px;
+    }
+
+    .icons-projetos-gunicorn {
+        width: 65px;
+        padding-bottom: 10px;
+    }
+
+    .icons-projetos-html {
+        width: 45px;
+    }
+
+    .icons-projetos-linux {
+        width: 43px;
+    }
+
+    .icons-projetos-nginx {
+        width: 43px;
+    }
+
+    .icons-projetos-python {
+        width: 47px;
+    }
+
     .home-image, .my-photo, .nav-signature, .column, .footer_board {
         width: 100%;
     }
