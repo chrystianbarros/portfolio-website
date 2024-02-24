@@ -1,80 +1,121 @@
-<header>
+<nav>
+  <!--Script para o dropdown menu-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
   <div class="px-3 py-2 text-bg-dark border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-        <!--SVG icons-->
-        <div class="svgs">
-          {%include 'svgs.html'%}
-        </div>
+      <!--SVG icons-->
+      <div class="svgs">
+        {%include 'svgs.html'%}
+      </div>
 
-        <!--Navigation icons-->
-        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <img class="nav-signature" src="../static/images/assinatura.png" width="250px" style="filter: invert(100%); -webkit-filter: invert(100%);"/>
-        </a>    
-        
-        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+      <!--Navigation icons-->
+      <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+        <img class="nav-signature" src="../static/images/assinatura.png" width="250px" style="filter: invert(100%); -webkit-filter: invert(100%);"/>
+      </a>    
+      
+      <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" id="nav-icons">
+        <li>
+          <a href="/home" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#inicio"/></svg>
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="/apresentacao" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#apresentacao"/></svg>
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="/certificacoes" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#certificacoes"/></svg>
+            Certificações
+          </a>
+        </li>
+        <li>
+          <a href="/habilidades" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#habilidades"/></svg>
+            Habilidades técnicas
+          </a>
+        </li>
+        <!--
           <li>
-            <a href="/home" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#inicio"/></svg>
-              Início
-            </a>
-          </li>
-          <li>
-            <a href="/apresentacao" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#apresentacao"/></svg>
-              Apresentação
-            </a>
-          </li>
-          <li>
-            <a href="/certificacoes" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#certificacoes"/></svg>
-              Certificações
-            </a>
-          </li>
-          <li>
-            <a href="/habilidades" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#habilidades"/></svg>
-              Habilidades técnicas
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#portfolio"/></svg>
-              Portfólio
-            </a>
-          </li>
-          <li>
-            <a href="/projeto" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#projeto"/></svg>
-              Sobre este projeto
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#contato"/></svg>
-              Contato
-            </a>
-          </li>
-        </ul>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#portfolio"/></svg>
+            Portfólio
+          </a>
+        </li>
+        -->
+        <li>
+          <a href="/projeto" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#projeto"/></svg>
+            Sobre este projeto
+          </a>
+        </li>
+        <li>
+          <a href="/contato" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor"><use xlink:href="#contato"/></svg>
+            Contato
+          </a>
+        </li>
+      </ul>
       </div>
     </div>
   </div>
 
   <!--Action buttons-->
   <div class="px-3 py-2 border-bottom mb-3">
-    <div class="container d-flex flex-wrap justify-content-right">
-      <!--
-        Form de pesquisa abaixo
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-        <input type="search" class="form-control" placeholder="Pesquisar..." aria-label="Search">
-      </form>
-      -->
+    <div class="container d-flex flex-wrap justify-content-left">
 
-      <div class="text-end">
+      <div id="desktop-act-buttons" class="text-end">
         <a target="_blank" class="btn btn-primary" href="https://github.com/chrystianbarros/">GitHub</a>  
         <a target="_blank" class="btn btn-primary" href="https://www.linkedin.com/in/chrystianbarros/">LinkedIn</a>  
       </div>
+
+      <div class="dropdown">
+        <button id="dropdown-options" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Menu
+        </button>
+        <div class="dropdown-menu">
+          <a href="/home" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#inicio"/></svg>
+            Início
+          </a>
+          <a href="/apresentacao" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#apresentacao"/></svg>
+            Apresentação
+          </a>
+          <a href="/certificacoes" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#certificacoes"/></svg>
+            Certificações
+          </a>
+          <a href="/habilidades" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#habilidades"/></svg>
+            Habilidades técnicas
+          </a>
+          <!--
+            <a href="#" class="dropdown-item">
+              <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#portfolio"/></svg>
+              Portfólio
+            </a>
+          -->
+          <a href="/projeto" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#projeto"/></svg>
+            Sobre este projeto
+          </a>
+          <a href="/contato" class="dropdown-item">
+            <svg class="bi" width="16" height="16" style="margin-right: 5px; margin-bottom: 3px"><use xlink:href="#contato"/></svg>
+            Contato
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</header>
+</nav>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

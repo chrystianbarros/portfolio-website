@@ -3,12 +3,20 @@
     width: 50%;
 }
 
+#mobile-nav-buttons, #dropdown-options, #contato-text-mobile {
+    display: none;
+}
+
 .feature-icon {
     width: 4rem;
     height: 4rem;
     border-radius: .75rem;
 }
-  
+
+.icons-projetos-oraclecloud {
+    padding-right: 15px; 
+    padding-top: 20px;
+}  
 .icon-square {
     width: 3rem;
     height: 3rem;
@@ -50,6 +58,20 @@ clear: both;
         width: 40px;
     }
 
+    #contato-text-desktop, #botao-email, #nav-icons, #footer-span, #desktop-act-buttons {
+        display: none;
+    }
+
+    #mobile-nav-buttons, #dropdown-options, #contato-text-mobile {
+        display: inline-block;
+        align-content: center;
+    }
+
+    #nav-button {
+        height: 25px;
+        padding-top: 0;
+    }
+
     .icons-projetos {
         width: 50px;
         padding-bottom: 10px;
@@ -79,6 +101,12 @@ clear: both;
 
     .icons-projetos-python {
         width: 47px;
+    }
+
+    .icons-projetos-oraclecloud {
+        padding-right: 15px;
+        padding-top: 5px;
+        width: 115px;
     }
 
     .home-image, .my-photo, .nav-signature, .column, .footer_board {

@@ -27,6 +27,10 @@ def habilidades():
 def projeto():
     return render_template('projeto.html')
 
+@app.route("/contato")
+def contato():
+    return render_template('contato.html')
+
 @app.route("/container")
 def container_id():
     return f"Container ID: {socket.gethostname()}"
